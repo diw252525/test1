@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop in HTML</title>
+</head>
+<body>
+    <div id="content"></div>
+
+    <script>
+        // Get the div where we want to insert content
+        const contentDiv = document.getElementById('content');
+
+        let sum = 0
+
+        // Use a for loop to generate HTML content
+
+        for (let i = 1; i <= 10; i= i+1) {
+            // Create a new paragraph element
+            const para = document.createElement('p');
+            // Set the text content of the paragraph
+            sum = sum +i
+            para.textContent = `This is going to be the new application`;
+            //sum = sum +i
+            // Append the paragraph to the content div
+            contentDiv.appendChild(para);
+        }
+    </script>
+</body>
+</html>
